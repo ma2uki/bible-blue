@@ -1,44 +1,14 @@
 @charset 'UTF-8';
 
 body {
-    background-color: black;
-}
-
-/*
-LOADING
-================================================ */
-#loading {
-    background-color: var(--light-grey);
-    position: fixed;
-    z-index: 9999;
-    inset: 0;
-    display: grid;
-    place-items: center;
-}
-#loading-screen {
-    background-color: var(--light-green);
-    position: fixed;
-    inset: 0;
-    z-index: 9998;
-    translate: 0 100vh;
-}
-#loading p {
-    font-size: 2rem;
-    font-family: var(--oswald-font);
+    background-color: rgba(30,144,255,0.15);
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 
 /* HEADER
 ================================================ */ 
-#particles-js-canvas-el {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-    display: block;
-}
+
 header {
     position: relative;
     width: 100%;
@@ -70,7 +40,9 @@ header {
     font-size: 1.25rem;
     z-index: 4;
 }
-
+.header-link a {
+    text-decoration: none; /* 下線を非表示にする */
+}
 .header-link img {
     background: #fff;
     border-radius: 50%;
@@ -96,14 +68,7 @@ header img {
 /* GALLERY
 ================================================ */
 
-#particles-ga {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
+
 .gallery {
     position: relative;
     min-height: 400px; /* 必要に応じて調整 */
@@ -304,7 +269,7 @@ LAYOUT
 FOOTER
 ================================================ */
 footer {
-    background: linear-gradient(135deg, rgba(40,10,40,0.55) 0%, rgba(60,0,40,0.35) 100%);
+    background: linear-gradient(135deg, rgba(30,144,255,0.8) 0%, rgba(0,0,139,0.9) 100%);
     backdrop-filter: blur(8px) saturate(120%);
     -webkit-backdrop-filter: blur(8px) saturate(120%);
     border-top: 1px solid rgba(255,182,222,0.18);
