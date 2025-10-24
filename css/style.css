@@ -43,6 +43,10 @@ header {
 .header-link a {
     text-decoration: none; /* 下線を非表示にする */
 }
+.page-link {
+    color: white;
+    text-decoration: none;
+}
 .header-link img {
     background: #fff;
     border-radius: 50%;
